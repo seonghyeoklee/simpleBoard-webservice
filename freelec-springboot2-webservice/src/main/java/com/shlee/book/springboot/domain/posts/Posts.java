@@ -29,11 +29,9 @@ public class Posts {
         this.author = author;
     }
 
-    public Posts update(String title, String content) {
-        return Posts.builder()
-                .title(title)
-                .content(content)
-                .build();
+    public void update(String title, String content) {
+        this.title = title;
+        this.content = content;
     }
 
 }
